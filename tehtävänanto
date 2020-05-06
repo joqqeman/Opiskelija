@@ -1,0 +1,44 @@
+Henkilo
+Luo luokka Henkilo. Luokan tulee toimia seuraavan esimerkin mukaisesti.
+
+Henkilo ada = new Henkilo("Ada Lovelace", "Korsontie 1 03100 Vantaa");
+Henkilo esko = new Henkilo("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki");
+System.out.println(ada);
+System.out.println(esko);
+Esimerkkitulostus
+
+Ada Lovelace
+  Korsontie 1 03100 Vantaa
+Esko Ukkonen
+  Mannerheimintie 15 00100 Helsinki
+Opiskelija
+Luo luokka Opiskelija joka perii luokan Henkilo.
+
+Opiskelijalla on aluksi 0 opintopistettä. Aina kun opiskelija opiskelee, opintopistemäärä kasvaa. Luokan tulee toimia seuraavan esimerkin mukaisesti.
+
+Opiskelija olli = new Opiskelija("Olli", "Ida Albergintie 1 00400 Helsinki");
+System.out.println(olli);
+System.out.println("opintopisteitä " + olli.opintopisteita());
+olli.opiskele();
+System.out.println("opintopisteitä "+ olli.opintopisteita());
+Esimerkkitulostus
+
+Olli
+  Ida Albergintie 1 00400 Helsinki
+opintopisteitä 0
+opintopisteitä 1
+Opiskelijalle toString
+Edellisessä tehtävässä Opiskelija perii toString-metodin luokalta Henkilo. Perityn metodin voi myös ylikirjoittaa, eli korvata omalla versiolla. Tee luokalle Opiskelija oma versio toString-metodista. Metodin tulee toimia seuraavan esimerkin mukaisesti.
+
+Opiskelija olli = new Opiskelija("Olli", "Ida Albergintie 1 00400 Helsinki");
+System.out.println(olli);
+olli.opiskele();
+System.out.println(olli);
+Esimerkkitulostus
+
+Olli
+  Ida Albergintie 1 00400 Helsinki
+  opintopisteitä 0
+Olli
+  Ida Albergintie 1 00400 Helsinki
+  opintopisteitä 1
